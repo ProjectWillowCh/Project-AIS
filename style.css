@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(236, 240, 240);
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-image: url(Assets/kivotosplaceholder.jpg);
+    background-size: cover;
+    min-height: 18px;
+    height: 100vh;
+    /* background-repeat: no-repeat; */
+}
+
+.wrapper {
+    display: flex;
+    font-size: 18px;
+    height: 100vh;
+}
+
+nav {
+    margin: auto;
+    padding: 3em 10em;
+    background-color: rgba(19, 40, 133, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.206);
+    border-radius: 3em;
+    border: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2em;
+}
+
+.nav-links li, .dropdown li {
+    height: 100%;
+    padding: 0.5em 1em;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+a {
+    color: rgb(0, 162, 255);
+}
+
+.dropdown {
+    position: absolute;
+    padding: 1em 0.5em;
+    margin: 0.6em -3em;
+    color: rgb(0, 89, 255);
+    background-color: rgba(0, 255, 255, 0.445);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 12px rgba(0, 255, 255, 0.329);
+    border-radius: 2em;
+    display: none;
+}
+
+li {
+    border-radius: 1em;
+    transition: 0.3s ease;
+}
+
+li:hover {
+    background-color: rgba(133, 236, 243, 0.5);
+}
+
+li:hover .dropdown {
+    display: block;
+}
+
+.dropdown-2 {
+    position: absolute;
+    padding: 0.5em 0.5em;
+    margin: -2.5em 12.2em;
+    color: rgb(0, 89, 255);
+    background-color: rgba(0, 255, 255, 0.445);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 12px rgba(0, 255, 255, 0.329);
+    border-radius: 2em;
+    display: none;
+}
+
+.dropdown li:nth-child(2):hover .dropdown-2 {
+    display: block;
+}
+
+.carousel {
+    margin: 100px auto;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+    border: 5px rgb(0, 140, 255);
+}
+
+.jumbotron {
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    background: rgb(0, 255, 157);
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    border: 5px solid rgb(0, 140, 255);
+    /* overflow-x: auto; */
+}
+
